@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script type="text/javascript" src="imageslider.js"></script>
+<script type="text/javascript" src="tictactoe.js"></script>
+ <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+
+</head>
+<body>
+<button onclick="reveal()">Click me</button>
+<div id="itworks" style="display:none">hi</div>
+<button onclick="rumble()">rumble</button> 
+<button onclick="timer()"> Start Timer</button>
+<button>Start Animation</button>
+<p id="timer">____</p>
+<br>
+<br>
+
+<form>
+	<input type="text" id = "namefield" value="first name">
+	<button  id = "submit" type="button" value>submit</button> 
+	<div id ="warning" style = "display:none">cannot be empty</div>	
+</form>
+
+<div id = "abc">colored text</div>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id = "animate"> 
+<img src = "voltorb.jpg"> 
+</div>
+
+<div class="container">
+            <div class="header">
+                <h1 class="text-muted">jQuery Basic Slider</h1>
+            </div>
+
+            <div id="slider">
+                <ul class="slides">
+                    <li class="slide slide1">slide1</li>
+                    <li class="slide slide2">slide2</li>
+                    <li class="slide slide3">slide3</li>
+                    <li class="slide slide4">slide4</li>
+                    <li class="slide slide5">slide5</li>
+                    <li class="slide slide1">slide1</li>
+                </ul>
+            </div>
+
+        </div>
+
+<script type="text/javascript" src="library.js"></script>
+<script type="text/javascript" src="library2.js"></script>
+<!-- <script>
+	console.log($('div').attr('sadasd', '10').html())
+	$('div').on('dblclick',function(event){
+		console.log(event)
+	})
+</script> -->
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$("#abc").colorChanger("#4286f4");
+	$("img").bounce("100px");
+	$("#warning").inputFields();
+
+
+
+})
+
+
+</script>
+
+</body>
+</html>
