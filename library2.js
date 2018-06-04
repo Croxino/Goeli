@@ -34,25 +34,51 @@ $(function(){
 
 	startSlider();
 });
-
+var goeli = true;
+var maxHeight = maxHeight;
 $.fn.colorChanger = function(changeColor) {
     this.css( "color", changeColor );
 }
 
-$.fn.bounce = function(maxHeight){
-			  this.animate({bottom:maxHeight})
-			  	  .animate({top:"0px"})
-			  	  .css("position", "relative");
+$.fn.bounce = function(hhh, maxHeight){
+
+
+		$(hhh).animate({bottom:"0px"})
+			  .css("position", "relative");			
+		$(hhh).animate({bottom:maxHeight});
+			   setTimeout(function() {$(hhh).animate({bottom:"0px"})}, 500);
+
+
+	if (goeli == true) {
+		setInterval($.fn.bounce(hhh, maxHeight), 2000);
+		goeli = false;
+
+
+	}
+
+	console.log(maxHeight);
 }
+
+// $.fn.jump = function(maxHeight){
+// 			  this.animate({bottom:maxHeight})
+// 			  	  .animate({top:"0px"})
+// 			  	  .css("position", "relative");
+
+// 		if (goeli == true) {
+// 		setInterval($.fn.bounce, 2000);
+// 		goeli = false;
+// 	}
+// }
+
 
 
 $.fn.inputFields = function(){
-	var textBox =  $.trim( $('input[type=text]').val() )
-	$("button").click(function(){
 
+	$("button").click(function(){
+			var textBox =  $.trim( $('input[type=text]').val() )
 		if(textBox == "")
 		{
-			this.show();
+			alert("dasdsa");
 		}
 	})
 
@@ -220,12 +246,3 @@ $.fn.inputFields = function(){
 
 
 //setInterval(bounce, 2000);
-
-
-			
-	
-
-
-
-
-
