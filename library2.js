@@ -40,17 +40,17 @@ $.fn.colorChanger = function(changeColor) {
     this.css( "color", changeColor );
 }
 
-$.fn.bounce = function(hhh, maxHeight){
+$.fn.bounce = function(maxHeight){
 
 
-		$(hhh).animate({bottom:"0px"})
+		$("#bounceimg").animate({bottom:"0px"})
 			  .css("position", "relative");			
-		$(hhh).animate({bottom:maxHeight});
-			   setTimeout(function() {$(hhh).animate({bottom:"0px"})}, 500);
+		$("#bounceimg").animate({bottom:maxHeight});
+			   setTimeout(function() {$("#bounceimg").animate({bottom:"0px"})}, 500);
 
 
 	if (goeli == true) {
-		setInterval($.fn.bounce(hhh, maxHeight), 2000);
+		setInterval($.fn.bounce(maxHeight), 2000);
 		goeli = false;
 
 
