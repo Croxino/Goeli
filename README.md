@@ -24,9 +24,9 @@
 <img src="https://i.imgur.com/DPD034u.gif" alt="bounce"></p>
 <h2 id="usage">Usage</h2>
 <p>For the bounce and jump function simply add this in your script tags</p>
-<pre><code>`$(HTMLelement).jump(bounceheight);`
+<pre><code>$(HTMLelement).jump(bounceheight);
 or
-`$().bounce(bounceheight);`
+$().bounce(bounceheight);
 </code></pre>
 <p>for example</p>
 <p><code>$("img").jump("100px");</code></p>
