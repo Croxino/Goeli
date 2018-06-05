@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+    <title></title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-<script type="text/javascript" src="imageslider.js"></script>
-<script type="text/javascript" src="tictactoe.js"></script>
+
+<!--<script type="text/javascript" src="imageslider.js"></script>
+<script type="text/javascript" src="tictactoe.js"></script>-->
  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
 
 </head>
@@ -20,9 +21,9 @@
 <br>
 
 <form>
-	<input type="text" id = "namefield" value="first name">
-	<button  id = "submit" type="button" value>submit</button> 
-	<div id ="warning" style = "display:none">cannot be empty</div>	
+    <input type="text" id="namefield">
+    <button  id = "submit" type="button">submit</button> 
+    <div id ="warning" style = "display:none">cannot be empty</div> 
 </form>
 
 <div id = "abc">colored text</div>
@@ -36,7 +37,7 @@
 <br>
 <br>
 <div id = "animate"> 
-<img src = "voltorb.jpg"> 
+<img id="bounceimg" src = "voltorb.jpg"> 
 </div>
 
 <div class="container">
@@ -60,17 +61,17 @@
 <script type="text/javascript" src="library.js"></script>
 <script type="text/javascript" src="library2.js"></script>
 <!-- <script>
-	console.log($('div').attr('sadasd', '10').html())
-	$('div').on('dblclick',function(event){
-		console.log(event)
-	})
+    console.log($('div').attr('sadasd', '10').html())
+    $('div').on('dblclick',function(event){
+        console.log(event)
+    })
 </script> -->
 <script type="text/javascript">
 $(document).ready(function(){
 
-	$("#abc").colorChanger("#4286f4");
-	$("img").bounce("100px");
-	$("#warning").inputFields();
+    //$("#abc").colorChanger("#4286f4");
+    $().bounce("10px");
+    $("#warning").inputFields();
 
 
 
