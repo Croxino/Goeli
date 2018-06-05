@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Readme.md</title>
   <link rel="stylesheet" href="https://stackedit.io/style.css" />
 </head>
 
@@ -17,14 +18,20 @@
 <h3 id="installing">Installing</h3>
 <p>Simply download the Javascript file and link it to your HTML.</p>
 <h2 id="features">Features</h2>
-<p>calling the .bounce function in your html.</p>
-<p><img src="https://i.imgur.com/OqAd1fJ.gif" alt="bounce"></p>
+<p>calling the .jump and bounce function in your html.</p>
+<p>Jump<br>
+<img src="https://i.imgur.com/OqAd1fJ.gif" alt="jump"></p>
+<p>Bounce<br>
+<img src="https://i.imgur.com/DPD034u.gif" alt="bounce"></p>
 <h2 id="usage">Usage</h2>
-<p>For the bounce function simply add this in your script tags</p>
-<pre><code>`$(HTMLelement).bounce(bounceheight);`
+<p>For the bounce and jump function simply add this in your script tags</p>
+<pre><code>`$(HTMLelement).jump(bounceheight);`
+or
+`$().bounce(bounceheight);`
 </code></pre>
 <p>for example</p>
-<p><code>$("img").bounce("100px");</code></p>
+<p><code>$("img").jump("100px");</code></p>
+<p>To use the bounce function you need to add “bounceimg” as ID to the element you want to bounce.</p>
 <h2 id="built-with">Built With</h2>
 <ul>
 <li><a href="https://jquery.com/">Jquery</a> - The web library used.</li>
@@ -40,4 +47,4 @@
 </div>
 </body>
 
-</html
+</html>
