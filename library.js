@@ -3,28 +3,17 @@ $.fn.colorChanger = function(changeColor) {
     this.css( "color", changeColor );
 }
 
-var bouncer =$.fn.bounce = function(maxHeight){
+var bouncer =$.fn.bounce = function(maxHeight)
+{
 
 
-setInterval(function(){
-
+setInterval(function()
+	{
 	$("#bounceimg").animate({bottom:"0px"})
 			  		   .css("position", "relative")			
 		$("#bounceimg").animate({bottom:maxHeight});
-			  
-		 		//setInterval(($.fn.bounce(maxHeight)));
-		 		    //setInterval(bouncer(maxHeight));
-
-}, 500);
-		// $("#bounceimg").animate({bottom:"0px"})
-		// 	  		   .css("position", "relative")			
-		// $("#bounceimg").animate({bottom:maxHeight});
-			  
-		//  		//setInterval(($.fn.bounce(maxHeight)));
-		//  		    setInterval(bouncer(maxHeight));
-
-
-	}
+	}, 500);
+}
 
 
 
