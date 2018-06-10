@@ -6,13 +6,22 @@ $.fn.colorChanger = function(changeColor) {
 var bouncer =$.fn.bounce = function(maxHeight){
 
 
+setInterval(function(){
 
-		$("#bounceimg").animate({bottom:"0px"})
+	$("#bounceimg").animate({bottom:"0px"})
 			  		   .css("position", "relative")			
 		$("#bounceimg").animate({bottom:maxHeight});
 			  
 		 		//setInterval(($.fn.bounce(maxHeight)));
-		 		    setInterval(bouncer(maxHeight));
+		 		    //setInterval(bouncer(maxHeight));
+
+}, 500);
+		// $("#bounceimg").animate({bottom:"0px"})
+		// 	  		   .css("position", "relative")			
+		// $("#bounceimg").animate({bottom:maxHeight});
+			  
+		//  		//setInterval(($.fn.bounce(maxHeight)));
+		//  		    setInterval(bouncer(maxHeight));
 
 
 	}
