@@ -6,17 +6,28 @@ $.fn.colorChanger = function(changeColor) {
 $.fn.bounce = function(maxHeight){
 
 var loop = true;
+var test = 5;
 
-		$("#bounceimg").animate({bottom:"0px"})
+
+
+
+for (i = 0 ; i < test; i++) {
+			$("#bounceimg").animate({bottom:"0px"})
 			  		   .css("position", "relative");			
 		$("#bounceimg").animate({bottom:maxHeight});
+		
+ } 
+ $("#bounceimg").animate({bottom:"0px"})
+		console.log(test);
+}
+
 			  
 
-	if (loop == true) {
-		($.fn.bounce(maxHeight));
-		loop = false;
-	}
-}
+	// if (loop == true) {
+	// 	($.fn.bounce(maxHeight));
+
+	// }
+
 
 
 
