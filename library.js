@@ -3,31 +3,19 @@ $.fn.colorChanger = function(changeColor) {
     this.css( "color", changeColor );
 }
 
-$.fn.bounce = function(maxHeight){
-
-var loop = true;
-var test = 5;
+var bouncer =$.fn.bounce = function(maxHeight){
 
 
 
-
-for (i = 0 ; i < test; i++) {
-			$("#bounceimg").animate({bottom:"0px"})
+		$("#bounceimg").animate({bottom:"0px"})
 			  		   .css("position", "relative");			
 		$("#bounceimg").animate({bottom:maxHeight});
-		
- } 
- $("#bounceimg").animate({bottom:"0px"})
-		console.log(test);
-}
-
 			  
+		 		//setInterval(($.fn.bounce(maxHeight)));
+		 		    setInterval(bouncer(maxHeight));
 
-	// if (loop == true) {
-	// 	($.fn.bounce(maxHeight));
 
-	// }
-
+	}
 
 
 
