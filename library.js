@@ -8,7 +8,7 @@ var bouncer =$.fn.bounce = function(maxHeight){
 
 
 		$("#bounceimg").animate({bottom:"0px"})
-			  		   .css("position", "relative");			
+			  		   .css("position", "relative")			
 		$("#bounceimg").animate({bottom:maxHeight});
 			  
 		 		//setInterval(($.fn.bounce(maxHeight)));
@@ -19,11 +19,20 @@ var bouncer =$.fn.bounce = function(maxHeight){
 
 
 
-$.fn.jump = function(maxHeight){
-			  this.animate({bottom:maxHeight})
-			  	  .animate({top:"0px"})
-			  	  .css("position", "relative");
+$.fn.jump = function(maxHeight, jumps){
+
+	var jumps;
+
+	for (i = 0; i < jumps; i++){
+				this.animate({bottom:"0px"})
+			  		.css("position", "relative")			
+					.animate({bottom:maxHeight})
+	}
+	this.animate({bottom:"0px"});
+
 }
+
+
 
 
 
