@@ -32,26 +32,22 @@
 <br>
 <div id = "animate"> 
 <img id="bounceimg" src = "voltorb.jpg"> 
+<img id = "jumper"src = "voltorb.jpg"> 
 </div>
+
 
 
 <script type="text/javascript" src="library.js"></script>
 
-<!-- <script>
-    console.log($('div').attr('sadasd', '10').html())
-    $('div').on('dblclick',function(event){
-        console.log(event)
-    })
-</script> -->
+
 <script type="text/javascript">
 $(document).ready(function(){
 
     //$("#abc").colorChanger("#4286f4");
     $().bounce("50px");
     //$("#warning").inputFields();
-    //$("img").jump("50px", 10);
-
-
+    $("#jumper").jump("100px", 10);
+    //$("#warning").inputFields();
 
 })
 

@@ -3,17 +3,19 @@ $.fn.colorChanger = function(changeColor) {
     this.css( "color", changeColor );
 }
 
-var bouncer =$.fn.bounce = function(maxHeight)
+$.fn.bounce = function(maxHeight)
 {
 
 
 setInterval(function()
 	{
-	$("#bounceimg").animate({bottom:"0px"})
-			  		   .css("position", "relative")			
+		$("#bounceimg").animate({bottom:"0px"})
+				  	   .css("position", "relative")			
 		$("#bounceimg").animate({bottom:maxHeight});
 	}, 500);
 }
+
+
 
 
 
@@ -29,6 +31,9 @@ $.fn.jump = function(maxHeight, jumps){
 	this.animate({bottom:"0px"});
 
 }
+
+
+
 
 
 
